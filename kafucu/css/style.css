@@ -139,23 +139,12 @@ header{
 
 /* NAVIGATION */
 
-/* VIEW-MAIN-FLAME SECTION STYLING */
-
-.view-main-frame{
-    width: 100%;
-    height: 600px;
-    background-image: url("../images/Hills.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
 
 /* MISSION */
 .section-gradient{
     width: 100%;
     min-height: 300px;
-    padding: 50px 0;
+    padding: 100px 0;
     text-align: center;
     background: rgb(64,218,240);
     background-image:url("../images/planebg.png");
@@ -305,15 +294,27 @@ header{
 .e-card:hover p, .e-card:hover h2{
     color: red;
 }
-/* .section-para span{
-    
-} */
 
+
+/* VIEW-MAIN-FLAME SECTION STYLING */
+.view-main-frame{
+    width: 100%;
+    height: 600px;
+    background-image: url("../images/banner2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.carousel{
+    height: 750px;
+}
 /* SAlVation */
 .salvation{
     width: 100%;
     height: 400px;
-     background: rgb(64,218,240);
+    background: rgb(64,218,240);
     background-image:url("../images/planebg.png")
     /* radial-gradient(circle, rgb(33, 172, 194) 5%, rgba(23,184,205,1) 24%, rgba(9,130,145,1) 50%,
      rgba(6,108,122,1) 76%, rgba(2,61,69,1) 98%), url("../images/222.jpg")*/;
@@ -372,23 +373,107 @@ a.hero-btn:hover i{
 /* TESTIMONIALS */
 
 .testimonial{
+    width: 80%;
+    margin: 0 auto;
+    min-height: 200px; 
+}
+.testimonial-wrapper{    
     width: 100%;
-    height: 200px
-    border: 2px solid red;  
-}
-
-.testimonial-wrapper{
     display: flex;
-    justify-content: space-between;
-    align-items: center;    border: 2px solid red;  
-
-}
-.testimonial-wrapper .testimonial-card{
-    flex: 25%;
-    margin: 5px 10px;
+    justify-content: space-around;  
+    align-items: center;
 }
 
+.testimonial-wrapper .testimonial-card{    
+    flex-basis: 33%;
+    min-height: 100px;
+    border-radius: 5px;
+    box-shadow:  0PX 10px 15px rgba(0, 0, 0, .5);
+}
 
+.testimonial-card .image{
+    width: 100px;
+    margin: 5px  auto;
+    margin-top: 15px;
+    height: 100px;
+    border-radius:  50%;
+    align-items: left;    
+}
+
+.testimonial-card .image img{
+    width: 100%;
+    margin: 0 auto;
+    height: 100px;
+    border-radius: 50%;        
+    background: #fff;    
+}
+
+.testimonial-card .card-headers{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 15px 0;
+    padding: 0 40px;
+}
+
+
+.testimonial-card .card-headers .name-heading,
+.testimonial-card .card-headers .year-study{
+    font-size: 14px;
+    font-weight: 500;
+    color: #565656;
+    margin-right: 50px;
+}
+
+.testimonial-card .card-headesr .name-heading{
+    margin: 0 30px 0 0px;
+}
+
+.testimonial-card .card-par{
+    margin: 5px 20px;
+    margin-bottom: 10px;
+    padding: 15px 5px;
+    text-align: left;
+}
+
+.testimonial-card .card-par .par{
+    color: #545434;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: .5px;
+    word-spacing: 3px;
+}
+
+/* -------------------media queries for testimonial section --------- */
+@media(max-width: 850px){
+    .testimonial-wrapper{   
+        justify-content: center;  
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .testimonial-wrapper .testimonial-card{    
+        flex-basis: 100%;
+        margin: 50px 0;
+    }
+
+    .testimonial-card .image{
+        width: 100px;
+        margin: 0  auto;
+        margin-top: -60px;
+        margin-bottom: 0;
+        height: 100px;
+        border-radius:  50%;
+        align-items: center;
+        background: #fff;
+    }
+
+    .testimonial-card .card-headers .name-heading,
+    .testimonial-card .card-headers .year-study{
+        margin-right: 10px;
+    }
+
+}
 
 /* CONNECT WITH US */
 
@@ -438,7 +523,6 @@ a.hero-btn:hover i{
     margin: 80px 0 40px 0;
     text-align: center;
     background: #fff;
-    /* border: 1px solid red; */
 }
 
 .section-heading{
@@ -635,7 +719,7 @@ footer{
     /* other pages structure */
     /* index page for sub-pages  */
 
-.banner nav.nav{
+.banner .nav{
     width: 100%;
     height: 70px;
     background: #1a1a1a;
@@ -643,7 +727,7 @@ footer{
     padding-top: 20px;
 }
 
-.banner nav.nav .menu{
+.banner .nav .menu{
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -652,20 +736,20 @@ footer{
     height: 50px;
 }
 
-.banner nav.nav .menu li{
+.banner .menu li{
     list-style: none;
     padding: 0 15px;
     border-left: 1px solid #ddd;
 }
 
-.banner nav.nav .menu li.active a{
+.banner .nav .menu li.active a{
    color: #d60966;
 }
 
-.banner nav.nav .menu li:first-child{
+.banner .nav .menu li:first-child{
     border: none;
 }
-.banner nav.nav .menu li a{
+.banner .nav .menu li a{
     text-decoration: none;
     font-size: 14px;
     font-weight: 400;
@@ -673,15 +757,15 @@ footer{
     text-transform: uppercase;
 }
 
-.banner nav.nav .menu li a:hover{
+.banner .nav .menu li a:hover{
     color: #d60966;
 }
 
-.banner nav.nav .menu li  ul{
+.banner .nav .menu li  ul{
     display: none;
 }
 
-.banner nav.nav .menu li:hover a  ul{
+.banner .nav .menu li:hover a  ul{
     display: block;
 }
 
