@@ -1,0 +1,16 @@
+
+@media and (max-width: 721px){
+
+
+
+    /* Join us section and stylings */
+    .social-flex{
+        /* margin: 10px 0; */
+        display: inline-block;
+    }
+    .para-set{
+        margin: 15px auto;
+        display: inline-block;
+        padding-top: 30px;
+    }
+}

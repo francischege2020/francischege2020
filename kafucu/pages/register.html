@@ -13,47 +13,196 @@
     
 </head>
 <body>
-   <section class="contact">
-       <!-- <div class="wrapper"> -->
-           <div class="contact-wrapper">
-               <div class="c-left">
-                <div class="form">
-                    <form action="#" class="reg" method="POST">                       
-                     <input type="text" name="lname" placeholder="Last name " required> <br>
-                     <input type="text" name="fname" placeholder="First name " required> <br>
-                     <input type="text" name="mname" placeholder="Middle name " required><br>
-                     <input type="email" name="email" placeholder="Your email" required> <br>
-                     <fieldset style="outline: none; border: none;">                        
-                     <input type="radio" name="male" id="gender-m" value="Male"><label for="gender-m">Male</label>
-                     <input type="radio" name="female" id="gender-f" value="Female"><label for="gender-f">Female</label> <br>
-                     <input type="radio" name="other" id="gender-o" value="Other"><label for="gender-o">Other</label>
-                     </fieldset> 
-                     <input type="text" name="year" id="regno" placeholder="Registration number"> <br>
-                     <input type="number" name="year" id="year" placeholder="Year of study"> <br>
- 
-                     <!-- <input type="password" name="pwd" id="pwd" placeholder="Enter Password" required><br>
-                     <input type="password" name="pwd" id="pwd" placeholder="Confirm Password" required> <br> -->
- 
-                     <button type="submit">Register</button>
- 
-                     <p class="p-para p-form">Already have an account <a href="#" class="f-login">Login</a></p>
-                    </form>
-                </div>
-               </div>
-              <div class="c-right">
-                <div class="wrapper">
-                    <div class="logo">
-                        <div class="img">
-                            <img src="../images/main-logo.png" alt=""> <br>
-                            KAIMOSI FRIENDS UNIVERSITY CHRISTIAN UNION
-                        </div>
-                    </div>
-                </div>
-              </div>
-           </div>
-       <!-- </div> -->
-   </section>
-    
+       <!-------------------------BANNER --------------------------->
+    <header class="banner">   
+    <!--     NAVIGATION                 -->
+        <nav class="nav">
+            <div class="wrapper">
+                <ul class="menu">
+                    <li class="item "><a href="../index.html">home</a></li>
+                    <li class="item "><a href="index.html">Church</a></li>
+                    <li class="item"><a href="about.html">About</a></li>
+                    <li class="item"><a href="contact.html">Contact </a></li>
+                    <li class="item"><a href="membership.html">Membership </a></li>
+                    <li class="item active"><a href="register.html">Register ! </a></li>
+                </ul>
+            </div>
+        </nav>
+            <!--     //NAVIGATION                 -->
+    </header>
+    <!---------------------------- //header---------------------- -->
+   <section class="p-banner p-about">
+        <div class="wrapper">
+            
+        <h1 class="p-heading-title">Welcome <span>- Register -</span></h1>
+        <div class="path">
+            <ul class="path-links">
+                <!-- <li><span>>></span></li>       -->
+                <!-- <li><a href="#"></a></li>       -->
+                <li><a href="../index.html"><i class="fa fa-home"></i> Home</a></li> 
+                <li><a href="membership.html">membership</a></li>              
+                <li class="active">register</li>
+            </ul>
+        </div>
+        </div>
+    </section>
 
+   <div class="wrapper">
+     <!-- -----------------------------welcome note -------------- -->
+     <div class="note">
+      <div class="note-title"><i>Welcome !</i></div>
+      <div class="note-paragraph">
+        <p>Welcome to kaimosi friends university christian union where we grow together and walk together in this academic journey in campus. Our aim is not just to obey the command by God [Heb 10:25] but also to stand with each other watching each other so that we can finish well. It doesn't matter when joning of our denomination differences or cultural diversities as christian union is a body of diverse christians pressing towards the same goal having laid aside all the differences. Our program suits everyone and are vital towards our spiritual growth and discipline. <br />
+          <br>Welcome  to kafucu !!!</p>
+      </div>
+       <div class="note-paragraph">
+        <p> 1 Timothy 2:3-4
+         <br />
+          <br />
+        [3] This is good, and pleases God our saviour, [4] who wants all men to be saved and to come to knowledge of the truth.</p>
+      </div>
+     </div>
+    <!-- ------------------------form---------------- -->
+    <section class="p-form">
+     <div class="container">
+      <div class="form-title">Join Us - Become a Member</div>
+      <div class="content">
+        <form action="#" >
+         <!-- ----------------------------- USER DETAILS--------------- -->
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Full name</span>
+              <input type="text" name="fullname" placeholder="Enter your name" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Username</span>
+              <input type="text" name="uname" placeholder="Enter your username" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Email</span>
+              <input type="text" name="fullname" placeholder="Enter your email" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Phone Number</span>
+              <input type="number" name="pno" placeholder="Enter your phone number" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Password</span>
+              <input type="password" name="pwd" placeholder="Enter your password" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Confirm Password</span>
+              <input type="password" name="pwd" placeholder="confirm your password" required>
+            </div>
+          </div>
+          <!-- -----------------------------GEnder details category----------------------- -->
+          <div class="gender-details">
+            <input type="radio" name="gender" id="dot-1">
+            <input type="radio" name="gender" id="dot-2">
+            <input type="radio" name="gender" id="dot-3">
+            <span class="gender-title">Gender</span>
+            <div class="category">
+              <!-- --------------------------------- LABELS FOR THE BUTTONS ------------------------- -->
+              <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="gender">Male</span>
+              </label>
+               <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="gender">Female</span>
+              </label>
+               <label for="dot-3">
+                <span class="dot three"></span>
+                <span class="gender">Other</span>
+              </label>
+            </div>
+          </div>
+          <div class="button">
+            <input type="submit" name="btn" value="Register">
+          </div>
+        </form>
+      </div>
+     </div>
+   </section>  
+    <!-- ----------------------//form---------------- -->
+</div>
+ <div class="note">
+      <div class="note-title note-red"><i>NOTE !!!</i></div>
+      <div class="note-paragraph note-red">
+        <p> The details submitted here are specifically for recording purposes, church organisation for smooth running meeting all members needs and reaching everyone for the union's programs and for for post-education purposes !!
+         <br />
+          <br>From kafucu executive !!!</p>
+      </div>
+     </div>
+   <!--    FOOTER     -->
+<footer id="footer">
+    <div class="wrapper">
+    <div class="foot-wrapper">
+        <div class="foot-card">
+            <h4 class="foot-title">QUICK LINKS</h4>
+            <ul class="menu-links">
+                <li class="item"><a href="#"><span>-</span><i class="fa fa-long-arrow-right arrow"></i>  Home</a></li>
+                <li class="item"><a href="#"><span>-</span><i class="fa fa-long-arrow-right arrow"></i>  Church</a></li>
+                <li class="item"><a href="#"><span>-</span><i class="fa fa-long-arrow-right arrow"></i>  Our Programs</a></li>
+                <li class="item"><a href="#"><span>-</span><i class="fa fa-long-arrow-right arrow"></i> E-library</a></li>
+                <li class="item"><a href="#"><span>-</span><i class="fa fa-long-arrow-right arrow"></i> Media</a></li>
+                <li class="item"><a href="#"><span>-</span><i class="fa fa-long-arrow-right arrow"></i> Blog</a></li>
+                <li class="item"><a href="#"><span>-</span><i class="fa fa-long-arrow-right arrow"></i> About</a></li>
+                <li class="item"><a href="#"><span>-</span><i class="fa fa-long-arrow-right arrow"></i> Contact Us</a></li>
+            </ul>                
+        </div>
+        <div class="foot-card">
+            <h4 class="foot-title">NAVIGATION</h4>
+            <ul class="menu-links">
+                <li class="item"><a href="#"><span>-</span><i class="fa fa-long-arrow-right arrow"></i> Cu Mission & Vision</a></li>
+                <li class="item"><a href="#"><span>-</span><i class="fa fa-long-arrow-right arrow"></i> Cu Constitution</a></li>
+                <li class="item"><a href="#"><span>-</span><i class="fa fa-long-arrow-right arrow"></i> Cu leadership</a></li>
+                <li class="item"><a href="#"><span>-</span><i class="fa fa-long-arrow-right arrow"></i> Former Leadership</a></li>
+                <li class="item"><a href="#"><span>-</span><i class="fa fa-long-arrow-right arrow"></i> Our Gallery</a></li>
+                <li class="item"><a href="#"></a></li>
+                <li class="item"><a href="#"><span>-</span><i class="fa fa-long-arrow-right arrow"></i>  Privacy Policy</a></li>
+                <li class="item"><a href="#"><span>-</span><i class="fa fa-long-arrow-right arrow"></i> Partnership policy</a></li>
+                <li class="item"><a href="#"><span>-</span><i class="fa fa-long-arrow-right arrow"></i> Terms & Conditions</a></li>
+            </ul>                
+        </div>
+        <!-- -->
+        
+        <div class="foot-card">
+            <div class="foot-card-wrapper"> 
+                    <h4 class="foot-title">UPCOMING EVENTS</h4>
+                    <!-- Caution!!! should not exceed 31 letters inclussive of spaces -->
+                    <!-- Caution!!! for the announceements, they should not exceed seven[7] exclussive of the hero-btn -->
+                    <ul class="menu-links">
+                        <li class="item"><a href="#"><i class="fa fa-long-arrow-right arrow" ></i> First years 2021 Orientaion</a></li>
+                        <li class="item"><a href="#"><i class="fa fa-long-arrow-right arrow" ></i> 2021 Elders' Dinnner</a></li>
+                        <li class="item"><a href="#"><i class="fa fa-long-arrow-right arrow" ></i> Focus 2021 Commmission Conference</a></li>
+                        <li class="item"><a href="#"><i class="fa fa-long-arrow-right arrow" ></i> Link 3</a></li>
+                        <li class="item"><a href="#"><i class="fa fa-long-arrow-right arrow" ></i> Link 4</a></li>
+                        <li class="item"><a href="#"><i class="fa fa-long-arrow-right arrow" ></i> Link 5</a></li>
+                        <li class="item"><a href="#"><i class="fa fa-long-arrow-right arrow" ></i> Link 6</a></li> <br />
+                        <a href="#" class="hero-btn"><span>-</span> visit events for more <span>-</span><i class="fa fa-long-arrow-right arrow"></i> </a>
+                    </ul>   
+                    <div class="foot-card">
+                    <h3 class="section-sub-title connect-foot">connect with us on social media platforms</h3>  
+                    <div class="social-flex-O no-bg">
+                        <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>            
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </div>
+                    </div>
+            </div> 
+        </div>
+    </div>
+    
+    <div class="wrapper">
+        <div class="copy">
+            <h4 class="copy-title">KAFUCO CHRISTIAN UNION</h4>
+            <h6 class="copy-text">&copy; 2021 kafucu. All rights reserved. Kafucu media team.</h6>
+        </div>
+    </div>      
+    </div>
+</footer>
 </body>
 </html>
